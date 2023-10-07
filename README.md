@@ -6,6 +6,7 @@ In this project, I developed a fully functional newspaper blog. It has responsiv
 - HTML
 - CSS
 - JavaScript
+
 ### Project Structure
 - `index.html`: The main HTML file representing the structure of the blog.
 - `styles.css`: The CSS file containing styles for the website.
@@ -21,7 +22,10 @@ In this project, I developed a fully functional newspaper blog. It has responsiv
 - News Display
 - Utilized the News API to fetch top headlines and display them on the website.
 - Implemented search functionality to allow users to search for news articles based on keywords.
+- Litte animations were added to our projects too.
 
+## Project Screenshot
+- ![Project screenshot](images/Screenshot231.png)
 ### How to Use
 - On a mobile device, click the toggle icon to display or hide the sidebar.
 - Search for news articles by entering keywords in the search box and clicking the "Search" button.
