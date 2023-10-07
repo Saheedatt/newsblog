@@ -1,0 +1,98 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our NewsPaper</title>
+    <link rel="icon" href="images/newspaper.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+        <a href="index.html" class="logo">Our newspaper</a>
+        <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Politics</a>
+        <a href="#" class="nav-link">Opinion Pages</a>
+        <a href="#" class="nav-link">Contacts</a>
+        </div>
+        <div id="sidebar-toggle" class="toggle">
+            <img id="menu-icon" src="images/menu.png" alt="Menu" onclick="toggleSidebar()">
+            <img id="close-icon" src="images/close.png" alt="Close" onclick="closeSidebar()">
+        </div>            
+    </nav>
+    <div class="name">
+        <h1 class="page-title">Our NewsPaper</h1>
+
+        <nav class="center-nav">
+            <a href="#" class="nav-link" onclick="displayNewsByCategory('politics')">Politics</a>
+            <a href="#" class="nav-link" onclick="displayNewsByCategory('technology')">Technology</a>
+            <a href="#" class="nav-link" onclick="displayNewsByCategory('sports')">Sports</a>
+            <a href="#" class="nav-link" onclick="displayNewsByCategory('art')">Art</a>
+            <a href="#" class="nav-link" onclick="displayNewsByCategory('fashion')">Fashion</a>
+        </nav>        
+    </div>
+    </header>
+    <main>
+        <section id="all-news">
+            <h2>Trending News</h2>
+            <input type="text" id="search" class="search" placeholder="Search for news">
+            <button id="searchBtn" onclick="searchNews()">Search</button>
+            <ul id="all-news-list">
+            </ul>
+            <button id="seeMoreBtn" onclick="loadMoreNews()">See more</button>
+        </section>        
+        <section id="selected-news" style="display: none;">
+            <!-- <h2>Selected News</h2> -->
+            <div id="selected-news-content"></div>
+        </section>
+        <section id="subscribe" class="subscribe">
+            <h2>Sign up for Our Newsletter</h2>
+            <p>Stay updated with the latest news by subscribing here.</p>
+            <form>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+        <div class="footer-column">
+                <h2 class="column1">Our Newspaper</h2>
+                <ul>
+                    <li><a href="#">Readers Center</a></li>
+                    <li><a href="#">Tools & Services</a></li>
+                    <li><a href="#">Our Contacts</a></li>
+                </ul>
+            </div>
+        <div class="footer-column">
+            <h3>News</h3>
+            <ul>
+                <li><a href="#">Arts</a></li>
+                <li><a href="#">Economy</a></li>
+                <li><a href="#">Stock Exchange</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Opinion</h3>
+            <ul>
+                <li><a href="#">Today's Opinion</a></li>
+                <li><a href="#">Editorials</a></li>
+                <li><a href="#">Contributing Writers</a></li>
+                <li><a href="#">Letters</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="social-icons">
+                <a href="https://twitter.com/home" target="_blank" class="social-icon"><img src="images/twitter.png" alt="Twitter-icon"></a>
+                <a href="#" class="social-icon"><img src="images/instagram.png" alt="Instagram-icon"></a>
+                <a href="https://github.com/Saheedatt/newsblog" target="_blank" class="social-icon"><img src="images/github.png" alt="Github-icon"></a>
+            </div>            
+            <p>&copy; 2019 Our Newspaper. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
